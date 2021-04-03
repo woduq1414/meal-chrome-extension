@@ -1,0 +1,27 @@
+{
+  "name": "Meeal",
+  "description": "A Vue.js web extension",
+  "version": null,
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/icon_dimigo.png",
+    "128": "icons/icon_dimigo.png"
+  },
+ 
+  "browser_action": {
+    "default_title": "Meeal",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "storage","<all_urls>"
+  ]
+}
